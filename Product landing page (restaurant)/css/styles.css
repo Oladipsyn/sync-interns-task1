@@ -1,0 +1,136 @@
+
+body{
+    background-color: rgba(38, 100, 19, 0.527);
+    font-family: serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: max-content;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+header>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    height: 5rem;
+}
+
+nav{
+    margin: auto;
+    padding: 0;
+    max-width: max-content;
+    border-radius: 1rem;
+
+}
+nav ul{
+    background-color: rgba(255, 252, 47, 0.904);
+    justify-content: stretch;
+}
+
+nav li{
+    list-style: none;
+    text-align: center; 
+}
+
+li{
+    display: inline-block;
+}
+
+.container a{
+    display: inline-block;
+    padding: 20px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 70, 70)
+}
+
+a{
+    text-decoration: none;
+}
+.container a:hover{
+    background-color: rgba(38, 100, 19, 0.527);
+}
+
+h2~img{
+    height: 15rem;
+    width: 15rem;
+    padding: 2%;
+    border-radius: 2rem;
+    
+}
+
+div>img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+article{
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    border-style: solid;
+    border-radius: 2rem;
+    margin: 2px;
+    padding: 10px;
+    
+}
+section > .promotion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    background-image: url(IMG-20220908-WA0004.jpg);
+    background-size: 800px;
+    border-radius: 15px;
+}
+.table{
+    display: inline-block;
+    max-width: max-content;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    display: flex;
+}
+footer div{
+    flex: 1;
+}
+
+.signup{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.btn{
+    background-color: rgba(255, 252, 47, 0.904);
+    border-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    cursor: pointer;
+}
