@@ -5,24 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Little Lemon</title>
-    <link
-      rel="stylesheet" href="css/styles.css">
-  </head>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="Litle Lemon  Restaurant">
+
+    <!-- Include your CSS files here -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
+    
+    <script src="https://kit.fontawesome.com/a2e0090f44.js" crossorigin="anonymous"></script>
+</head>
   <body>
-    <header>
-        <img src="images/Asset 16@4x.png">
-    </header>
-    <nav>
-        <ul class="container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="book.html">Bookings</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sign up.html">Sign up</a></li>
-          </ul>
-    </nav>
+    <section class="header">
+      <header>
+          <img src="./images/Asset 16@4x.png">
+      </header>
+      
+      <nav>    
+          <div class="nav-links" id="navLinks">
+              <i class="fa-solid fa-xmark" id="fa-xmark" onclick="hideMenu()"></i>
+              <ul class="container">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="book.html">Bookings</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="sign up.html">Sign Up</a></li>
+              </ul>   
+          </div>
+          <i class="fa-solid fa-bars" id="fa-bars" onclick="showMenu()"></i>
+      </nav> 
+  </section>
     <main>
-        <div class="container">
+      <h1>OUR MENU</h1>
+      <div class="menu">        
+        <div class="menu-section">
+          <div class="menu-item">
+              <img src="./images/falafel.jpg" alt="Food Item 1">
+              <div class="item-title">Falafel</div>
+              <div class="item-description"><i>Chickenpea, Herbs, Spices</i></div>
+              <div class="item-price">$12.99</div>
+              <a class="hero-btn" >Order</a>
+          </div>
+        </div>
+  
+      <div class="menu-section">
+          <div class="menu-item">
+              <img src="./images/saladd.jpg" alt="Food Item 2">
+              <div class="item-title">Pasta Salad</div>
+              <div class="item-description"><i>Lettuce, Vegetables, Mozzarella</i></div>
+              <div class="item-price">$9.99</div>
+              <a class="hero-btn">Order</a>
+          </div>
+      </div>
+  
+      <div class="menu-section">
+        <div class="menu-item">
+            <img src="./images/calamari.jpg" alt="Food Item 2">
+            <div class="item-title">Fried Calamari</div>
+            <div class="item-description"><i>Squid, Buttermilk, paprika, eggs, peanut oil</i></div>
+            <div class="item-price">$14.99</div>
+            <a class="hero-btn" >Order</a>
+        </div>
+      </div>
+  
+    <div class="menu-section">
+      <div class="menu-item">
+          <img src="./images/spaghetti bolognese.jpg" alt="Food Item 2">
+          <div class="item-title">Spaghetti Bolognese</div>
+          <div class="item-description"><i>Ground Beef, onions, celery, carrot, tomato paste, fresh bat leaves, oregano</i></div>
+          <div class="item-price">$29.99</div>
+          <a class="hero-btn" >Order</a>
+      </div>
+  </div>
+  
+  <div class="menu-section">
+    <div class="menu-item">
+        <img src="./images/spinach pici pasta.jpg" alt="Food Item 2">
+        <div class="item-title">Spinach Pici Pasta</div>
+        <div class="item-description"><i>Baby spinach, cloves of garlic, courgettes, parmesan cheese, pine nuts, olive oil</i></div>
+        <div class="item-price">$21.99</div>
+        <a class="hero-btn" >Order</a>
+    </div>
+  </div>
+  
+  <div class="menu-section">
+    <div class="menu-item">
+        <img src="./images/spring veg pasta.jpg" alt="Food Item 2">
+        <div class="item-title">Spring Veg Pasta</div>
+        <div class="item-description"><i>Parmesan cheese, cheddar, swiss emmental cheese, cherry tomatoes</i></div>
+        <div class="item-price">$19.99</div>
+        <a class="hero-btn" >Order</a>
+    </div>
+  </div>
+  
+  <div class="menu-section">
+    <div class="menu-item">
+        <img src="./images/prosciutto and beans.jpg" alt="Food Item 2">
+        <div class="item-title">Proscuito and Beans</div>
+        <div class="item-description"><i>Cherry tomatoes, pecorino toscano, herbed garlic butter, salt and black peper</i></div>
+        <div class="item-price">$24.99</div>
+        <a class="hero-btn" >Order</a>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-item">
+        <img src="./images/falafel.jpg" alt="Food Item 1">
+        <div class="item-title">Burritos</div>
+        <div class="item-description"><i>Ground beef,refried beans, enchilada sauce, onions and tortillas</i></div>
+        <div class="item-price">$14.99</div>
+        <a class="hero-btn" >Order</a>
+    </div>
+  </div>
+
+<div class="menu-section">
+    <div class="menu-item">
+        <img src="./images/saladd.jpg" alt="Food Item 2">
+        <div class="item-title">Chicken Salad</div>
+        <div class="item-description"><i>Fried crisp salad with celery, cheese, olives, onions, pepper, tomatoes, topped with garlic chicken</i></div>
+        <div class="item-price">$9.99</div>
+        <a class="hero-btn">Order</a>
+    </div>
+</div>
+
+<div class="menu-section">
+  <div class="menu-item">
+      <img src="./images/calamari.jpg" alt="Food Item 2">
+      <div class="item-title">Fried Calamari</div>
+      <div class="item-description"><i>Squid, Buttermilk, paprika, eggs, peanut oil</i></div>
+      <div class="item-price">$14.99</div>
+      <a class="hero-btn" >Order</a>
+  </div>
+</div>
+
+<div class="menu-section">
+<div class="menu-item">
+    <img src="./images/spaghetti bolognese.jpg" alt="Food Item 2">
+    <div class="item-title">Spaghetti Bolognese</div>
+    <div class="item-description"><i>Ground Beef, onions, celery, carrot, tomato paste, fresh bat leaves, oregano</i></div>
+    <div class="item-price">$29.99</div>
+    <a class="hero-btn" >Order</a>
+</div>
+</div>
+
+<div class="menu-section">
+<div class="menu-item">
+  <img src="./images/spinach pici pasta.jpg" alt="Food Item 2">
+  <div class="item-title">Spinach Pici Pasta</div>
+  <div class="item-description"><i>Baby spinach, cloves of garlic, courgettes, parmesan cheese, pine nuts, olive oil</i></div>
+  <div class="item-price">$21.99</div>
+  <a class="hero-btn" >Order</a>
+</div>
+</div>
+
+<div class="menu-section">
+<div class="menu-item">
+  <img src="./images/spring veg pasta.jpg" alt="Food Item 2">
+  <div class="item-title">Spring Veg Pasta</div>
+  <div class="item-description"><i>Parmesan cheese, cheddar, swiss emmental cheese, cherry tomatoes</i></div>
+  <div class="item-price">$19.99</div>
+  <a class="hero-btn" >Order</a>
+</div>
+</div>
+
+<div class="menu-section">
+<div class="menu-item">
+  <img src="./images/prosciutto and beans.jpg" alt="Food Item 2">
+  <div class="item-title">Proscuito and Beans</div>
+  <div class="item-description"><i>Cherry tomatoes, pecorino toscano, herbed garlic butter, salt and black peper</i></div>
+  <div class="item-price">$24.99</div>
+  <a class="hero-btn" >Order</a>
+</div>
+</div>
+</div>
+      
+        <!-- <div class="container">
             <div class="row">
               <div class="col">
                 <h1>Our Menu</h1>
@@ -79,15 +238,15 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary">Click this button!</button><br><br>
+          <button type="button" class="hero-btn">Click this button!</button><br><br> -->
           
     </main>
     
     <footer>
-      <div>
-        <img src="images/Asset 20@4x.png">
-        <p>&#169 Copyright Little Lemon</p>
-    </div>
-    </footer>
-  </body>
+            <div class="footer">
+                <img src="./images/Asset 20@4x.png">
+                <p>&#169 Copyright Little Lemon</p>
+            </div>   
+        </footer>
+  </body><script src="script.js"></script>
 </html>

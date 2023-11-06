@@ -11,64 +11,128 @@
     <!-- Include your CSS files here -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
     
+    <script src="https://kit.fontawesome.com/a2e0090f44.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
+<section class="header">
     <header>
         <img src="./images/Asset 16@4x.png">
     </header>
-
-    <nav>
-        <ul class="container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="book.html">Bookings</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sign up.html">Sign Up</a></li>
-        </ul>
+    
+    <nav>    
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" id="fa-xmark" onclick="hideMenu()"></i>
+            <ul class="container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="book.html">Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sign up.html">Sign Up</a></li>
+            </ul>   
+        </div>
+        <i class="fa-solid fa-bars" id="fa-bars" onclick="showMenu()"></i>
     </nav> 
+</section>
     <main>
-        <section>
-            <article class="promotion">
-                <div class="blog"><li><a href="blog.html"><h1> Little Lemon Restaurant</h1>
-                    <p>Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day. Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.</p></a></li> 
+        
+    
+        <!-- <section class="articles">
+            <h2>Featured Articles</h2>
+            <div class="article">
+                <img src="article1.jpg" alt="Article 1">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article">
+                <img src="article2.jpg" alt="Article 2">
+                <h3>Article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article">
+                <img src="article3.jpg" alt="Article 3">
+                <h3>Article 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read More</a>
+            </div>
+        </section> -->
+        <section id="blog">
+            <article class="promotion" style="background-image: url(images/IMG-20220908-WA0004.jpg)">
+                <div class="blog">
+                    <!-- <li><a href="blog.html"> -->
+                    <h1>Little Lemon Restaurant</h1><br>
+                   <p>Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day. Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.</p> 
+                   <!-- </a></li> -->
                 </div>             
             </article>
         </section>
-        <section>
-            <article>
-                <h2>Our Menu</h2>
-                <img src="images/saladd.jpg" class="img-fluid">
-                <p>Our menu are formed based on family recipes and widespread intercultural mix of italian, turkish and Meditteranean recipes.</p>
-                <li><a href="menu.html">Our Menu</a></li>
-            </article>
-            <article>
-                <h2>Book a Table</h2>
-                <img src="table setting.jpg">
-                <p>Make a reservation ahead of your date! We have different to table sizes for different occassion and dates, you can also choose your preferred branch and location </p>
-                <li><a href="book.html">Book a table</a></li>
-            </article>
-            <article>
-                <h2>Opening Hours</h2>
-                <img src="opening hours.jpg">
-                <p> Our restaurant is open for all and sundry, all race and gender</p>
-                <ul>
-                    <li>Mon - Friday: 8am - 10pm</li><br>
-                    <li>Sat: 10am - 11pm</li><br>
-                    <li>Sun: 2pm - 9pm</li>
-                </ul>
-            </article>
+        <section class="promotions">
+            <h2>Promotions</h2>
+            <div class="scrollable-posts">
+                <div class="blog-post">
+                    <img src="promotion1.jpg" alt="Promotion 1">
+                    <p>Special Offer: 20% off on weekends!</p>
+                </div>
+                <div class="blog-post">
+                    <img src="promotion2.jpg" alt="Promotion 2">
+                    <p>Try our new menu items today!</p>
+                </div>
+                <!-- Add more promotion posts as needed -->
+            </div>
+        </section>
+        <section class="itenary">
+            <div class="home-itenary">
+                <div class="home-article">
+                    <h3>Our Menu</h3>
+                    <div class="article-img">
+                        <img src="images/saladd.jpg" class="img-fluid">
+                    </div>
+                    <div class="text-box">
+                        <p>Our menu are formed based on family recipes and widespread intercultural mix of italian, turkish and Meditteranean recipes.</p><br><br>
+                        <a class="hero-btn" href="menu.html">Our Menu</a>    
+                    </div>                               
+                </div>
+                <div class="home-article">
+                    <h3>Book a Table</h3>
+                    <div class="article-img">
+                        <img src="table setting.jpg" class="img-fluid">
+                    </div>
+                    <div class="text-box">
+                        <p>Make a reservation ahead of your date! We have different to table sizes for different occassion and dates, you can also choose your preferred branch and location </p><br>
+                        <a class="hero-btn" href="book.html">Book a table</a>
+                    </div>                
+                </div>
+                <div class="home-article">
+                    <h3>Opening Hours</h3>
+                    <div class="article-img">
+                        <img src="opening hours.jpg" class="img-fluid">
+                    </div>    
+                    <div class="text-box">
+                        <p> Our restaurant is open for all and sundry, all race and gender</p>
+                        <ul>
+                            <li>Mon - Friday: 8am - 10pm</li><br>
+                            <li>Sat: 10am - 11pm</li><br>
+                            <li>Sun: 2pm - 9pm</li>
+                        </ul>
+                    </div>               
+                </div>
+            </div>
+            
         </section>
 
     </main><br><br>
     
     <footer>
-        <div>
+        <div class="footer">
             <img src="./images/Asset 20@4x.png">
             <p>&#169 Copyright Little Lemon</p>
         </div>   
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

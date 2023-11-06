@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Little Lemon</title>
-
     <meta name="description" content="A brief description">
     <meta name="author" content="Litle Lemon  Restaurant">
-    
+
+    <!-- Include your CSS files here -->
     <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
+    
+    <script src="https://kit.fontawesome.com/a2e0090f44.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+<section class="header">
     <header>
-      <img src="images/Asset 16@4x.png">
+        <img src="./images/Asset 16@4x.png">
     </header>
-    <nav>
-      <ul class="container">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="book.html">Bookings</a></li>
-        <li><a href="sign up.html">Sign up</a></li>
-      </ul>
-    </nav>
+    
+    <nav>    
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" id="fa-xmark" onclick="hideMenu()"></i>
+            <ul class="container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="book.html">Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sign up.html">Sign Up</a></li>
+            </ul>   
+        </div>
+        <i class="fa-solid fa-bars" id="fa-bars" onclick="showMenu()"></i>
+    </nav> 
+</section>
     <main>
         <section>
             <article>
@@ -56,4 +69,5 @@
       
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
