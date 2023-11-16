@@ -31,7 +31,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="book.html">Bookings</a></li>
+                        <li><a href="book.html">Reservations</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="sign up.html">Sign Up</a></li>
                     </ul>   
@@ -39,8 +39,69 @@
                 <i class="fa-solid fa-bars" id="fa-bars" onclick="showMenu()"></i>
             </nav> 
         </section>
-        <main>
-            <h1>Book a Table</h1>
+        <section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <!-- <div class = "card-container">
+                <div class = "card-img"> -->
+                    <!-- <img src="./images/banner-img.jpg"> -->
+                    <!-- <img src="./images/card-img.jpg"> -->
+                    <!-- image here -->
+                <!-- </div> -->
+
+                <div class = "card-content">
+                    <h3>Reservations</h3>
+                    <form>
+                        <div class = "form-row">
+                            <select name = "days">
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+                            
+                            <select name = "hours">
+                                <option value = "hour-select">Time</option>
+                                <option value = "10">10: 00 AM</option>
+                                <option value = "10">12: 00 PM</option>
+                                <option value = "10">02: 00 PM</option>
+                                <option value = "10">04: 00 PM</option>
+                                <option value = "10">06: 00 PM</option>
+                                <option value = "10">08: 00 PM</option>
+                                <option value = "10">10: 00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Guest Name">
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <select name = "days">
+                                <option value = "Table Size">Table Size</option>
+                                <option value = "2">Table for 2</option>
+                                <option value = "2">Table for 3</option>
+                                <option value = "4">Table for 4</option>
+                                <option value = "5">Table for 5</option>
+                                <option value = "6">Table for 6</option>
+                                <option value = "7">Table for 7</option>
+                                <option value = "8">Table for 8</option>
+                            </select>
+                            <input type="text" placeholder="Date" onfocus="(this.type = 'date')" id="booking_date" name="booking_date">
+                        </div>
+
+                        <button type="submit" class="hero-btn">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- <main>
+            <h1>Reservations</h1>
             <form method="post">
                 <fieldset id="size">
                     <label>
@@ -85,7 +146,7 @@
                 <button type="submit" class="hero-btn">Book Table</button>
             </form><br>
             
-        </main>
+        </main> -->
         <footer>
             <div class="footer">
                 <img src="./images/Asset 20@4x.png">

@@ -34,7 +34,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="menu.html">Menu</a></li>
                   <li><a href="blog.html">Blog</a></li>
-                  <li><a href="book.html">Bookings</a></li>
+                  <li><a href="book.html">Reservations</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="sign up.html">Sign Up</a></li>
               </ul>   
@@ -43,25 +43,61 @@
       </nav> 
   </section>
     <main>
-      <div>
-        <img src="IMG-20220908-WA0051.jpg" width="250rem" height="200rem">
-        <img src="IMG-20220908-WA0005.jpg" width="250rem" height="200rem">
-      </div>
-      <div>
-        <img src="IMG-20220908-WA0004.jpg " width="250rem" height="200rem">
-      <img src="IMG-20220908-WA0002.jpg" width="250rem" height="200rem">
-      </div>
-      
       <h1>Blog</h1>
-      <article>
-        <h2>20% of this weekend</h2>
-        <p>Come down to Little lemon and your meal will be 20% off</p>
+      <section class="promotions">
+        <h2>Promotions</h2>
+        <div class="scrollable-posts">
+            <div class="blog-post">
+                <img src="./images/IMG-20220908-WA0004.jpg" alt="Promotion 1">
+                <p>Special Offer: 20% off on weekends!</p>
+            </div>
+            <div class="blog-post">
+                <img src="./images/salmon.jpeg" alt="Promotion 2">
+                <p>Try our new menu items today!</p>
+            </div>
+            <div class="blog-post">
+                <img src="./images/burger.jpg" alt="Promotion 2">
+                <p>Try our new menu items today!</p>
+            </div>
+            <div class="blog-post">
+                <img src="./images/chicken.jpeg" alt="Promotion 2">
+                <p>Try our new menu items today!</p>
+            </div>
+            <!-- Add more promotion posts as needed -->
+        </div>
+    </section>
+      <article class="blog">
+        <div>
+          <h2>20% off this weekend</h2>
+          <p>Come down to Little lemon and your meal will be 20% off</p>
+        </div>       
       </article>
-      <article>
-        <h2>Our new menu</h2>
-        <p>We've updated our menu with new dinners.</p>
+
+      <article class="blog">
+        <div>
+          <h2>Our New Menu</h2>         
+          <div>
+            <img src="./images/burger.jpg" width="250rem" height="200rem">
+            <img src="./images/falafel.jpeg" width="250rem" height="200rem">
+          </div>
+          <div>
+            <img src="./images/IMG-20220908-WA0004.jpg " width="250rem" height="200rem">
+          <img src="./images/IMG-20220908-WA0002.jpg" width="250rem" height="200rem">
+          </div>
+          <p>We've updated our menu with new dinners.</p>
+          <button><a href="menu.html" class="hero-btn">Our Menu</a></button>
+        </div>       
       </article>
-      <button><a href="book.html" class="btn">Book a table</a></button><br><br>
+
+      <article class="blog">
+        <div>
+          <h2>Reserve a Table</h2>
+          <img src="./images/banner-img.jpg" class="img-fluid">
+          <p>Make a table reservation for your dates, get-together and other event celebrations </p>
+          <button><a href="book.html" class="hero-btn">Book a Table</a></button><br><br>
+        </div>       
+      </article>
+      
     </main>
     <footer>
       <div class="footer">
